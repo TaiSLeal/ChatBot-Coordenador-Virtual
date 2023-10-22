@@ -17,7 +17,7 @@ def get_vectorstore(cursoSelecionado):
 
     if cursoSelecionado == "Engenharia quimica":
         collection_name = os.getenv("QDRANT_COLLECTION_NAME1")
-    elif cursoSelecionado == "Automacao":
+    else: 
         collection_name = os.getenv("QDRANT_COLLECTION_NAME2")
     vectorstore = Qdrant(
         client = client,
