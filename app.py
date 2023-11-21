@@ -32,7 +32,7 @@ def main():
     st.set_page_config(page_title="CHATBOT",page_icon="https://www.eng.ufba.br/sites/eng.ufba.br/themes/ufba_bootstrap/favicon.ico")
     st.header("Coordenador Virtual")
 
-    cursoSelecionado = st.sidebar.selectbox(label='selecione o curso',options=["Engenharia química", "Engenharia de controle e automação de processos"])
+    cursoSelecionado = st.sidebar.selectbox(label='selecione o curso',options=["Engenharia química", "Engenharia de controle e automação"])
 
     vectorstore = get_vectorstore(cursoSelecionado)
 
