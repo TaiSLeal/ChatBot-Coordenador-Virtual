@@ -44,7 +44,7 @@ def main():
     user_question = st.text_input("escreva aqui sua pergunta")
     if user_question:
         st.write(f"Pergunta: {user_question}")
-        answer = qa.run(user_question)
+        answer = qa.run(f"oi, preciso que você me ajude a reponder as duvidas dos alunos de engenharia da politecnica UFBA, você será um coordenador virtual, e vai responder os alunos apenas com os documentos fornecidos, dé preferência aos documentos mais atualizados como por exemplo o guia do estudante supac. Caso não encontre alguma resposta no material seja gentil e peça desculpa e oriente o aluno a procurar a coordenação do curso, informe documentações necessárias e as ações necessárias para realizar o procedimento. Seja verdadeiro e objetivo e não invente informações. A pergunta é {user_question}")
         st.write(f"Resposta: {answer}")
 
 
