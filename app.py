@@ -15,7 +15,7 @@ def get_vectorstore(cursoSelecionado):
     )
     embeddings = OpenAIEmbeddings()
 
-    if cursoSelecionado == "Engenharia quimica":
+    if cursoSelecionado == "Engenharia química":
         collection_name = os.getenv("QDRANT_COLLECTION_NAME1")
     else: 
         collection_name = os.getenv("QDRANT_COLLECTION_NAME2")
